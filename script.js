@@ -1,6 +1,16 @@
-function message(){
-    alert("Вы подписаны");
-}
+let links = document.querySelectorAll('.scroll');
+let targetID;
+links.forEach(function (element) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault();
+        targetID = element.getAttribute('href');
+        document.querySelector(targetID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+})
 
-let message1= document.querySelector('.sub');
-message1.addEventListener("click", message);
+$(document).ready(function () {
+    $('.slider').bxSlider();
+});

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Russian Classic</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <header>
@@ -12,10 +15,10 @@
         <div class="container">
             <nav>
                 <ul class="navul">
-                    <li><a href="" class="nava">направления</a></li>
-                    <li><a href="" class="nava">писатели</a></li>
-                    <li><a href="" class="nava">книги</a></li>
-                    <li><a href="" class="nava">контакты</a></li>
+                    <li><a href="#dir" class="nava scroll">направления</a></li>
+                    <li><a href="#wri" class="nava scroll">писатели</a></li>
+                    <li><a href="#books" class="nava scroll">книги</a></li>
+                    <li><a href="#soc" class="nava scroll">контакты</a></li>
                 </ul>
             </nav>
             <form>
@@ -24,7 +27,7 @@
         </div>
     </header>
       <main>
-    <section class="directions">
+    <section class="directions" id="dir">
       <h2>Основные направления в литературе</h2>
       <div class="cards">
         <div class="card">
@@ -52,32 +55,44 @@
       </div>
     </section>
 
-    <section class="writers">
+    <section class="writers" id="wri">
       <h2>Писатели</h2>
       <div class="century-buttons">
-        <button>15 век</button>
-        <button>18 век</button>
+         <button><a href= '17century.html' class="century">17 век</a></button>
+        <button><a href= '18ntury.html' class="century">18 век</a></button>
       </div>
        <div class="century-buttons">
-        <button>19 век</button>
-        <button>20 век</button>
+        <button><a href= '19century.html' class="century">19 век</a></button>
+        <button><a href= '20century.html' class="century">20 век</a></button>
       </div>
     </section>
 
-    <section class="books">
+    <section class="books" id="books">
       <h2>Книги</h2>
       <div class="book-buttons">
         <button>Эпос</button>
         <button>Лирика</button>
       </div>
-      <div class="book-buttons1">
+      <div class="book-buttons">
         <button>Драма</button>
         <button>Лиро-эпос</button>
       </div>
     </section>
+
+    <section class="karusel">
+      <h2>Самые популярные книги</h2>
+       <div class="slider">
+          <div><img src="images/Война и мир.png"></div>
+          <div><img src="images/живаго.png"></div>
+          <div><img src="images/карамазовы.png"></div>
+          <div><img src="images/каренина.png"></div>
+          <div><img src="images/онегин.png"></div>
+          <div><img src="images/преступление.png"></div>
+      </div>  
+    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="soc">
     <div class="socials">
       <p>Наши социальные сети</p>
       <a href="#">prosto_classika</a><br>
@@ -91,6 +106,7 @@
       <a href="tel:+123456789">+123456789</a>
     </div>
     <div class="rights">Все права защищены</div>
+
   </footer>
  <script src="script.js"></script>
 </body>

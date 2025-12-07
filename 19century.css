@@ -86,16 +86,7 @@ p{
   font-weight: 400;
 }
 
-.bx-wrapper {
-    width: 600px;
-}
 
-.karusel{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 .cards {
   display: flex;
@@ -122,37 +113,6 @@ p{
   margin-top: 8px;
 }
 
-.century-buttons, .book-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-
-
-}
-
-
-.century-buttons button,
-.book-buttons button {
- 
-  width: 600px;
-  height: 140px;
-  color: #fff;
-  cursor: pointer;
-  background: linear-gradient(90deg, #6b001a 0%, #000000 50%, #6b001a 100%);
-  border: none;
-  font-size: 48px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.century-buttons button:hover,
-.book-buttons button:hover{
-
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(160, 0, 38, 0.7);
-}
-
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -177,11 +137,11 @@ p{
   color: #777;
   font-size: 12px;
 }
-.century{
+a{
   text-decoration: none;
   color: #ffffff;
 }
-
+ 
 @media (max-width: 600px) {
     h1{
      font-size: 35px;
